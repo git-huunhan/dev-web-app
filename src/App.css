@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+body {
+  padding: 100px 0 0 0;
+  background-color: #eefaff !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#nav-bar a{
+  font-weight: 500;
+  color: #4b4b4b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#nav-bar a:hover{
+  text-decoration: none;
+  color: #3BBED7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+#nav-bar a:focus{
+  color: #3BBED7;
+}
+
+#card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.068), 0 6px 20px 0 rgba(0, 0, 0, 0.103);
+  border-radius: 10px;
+}
+
+#card-title {
+  font-weight: 600;
+}
+
+#card-img {
+  border-radius: 10px;
+  height: 250px;
+}
+
+.button {
+  margin: 0 15px 0 15px;
+}
+
+.button-icon {
+  font-size: 30px;
+}
+
+.github {
+  color: #4b4b4b;
+}
+
+.instagram {
+  color: #ff6bb5;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.avatar {
+  margin: 15px 0 0 0;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 6px solid #4b4b4b;
+}
+
+#logo {
+  width: 250px;
+}
+
+.scrollTop {
+  position: fixed; 
+  width: 100%;
+  bottom: 20px;
   align-items: center;
+  height: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
 }
 
-.App-link {
-  color: #61dafb;
+.scrollTop:hover{
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 0.5;
   }
 }

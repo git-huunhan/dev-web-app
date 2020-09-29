@@ -1,25 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
+
 import './App.css';
+import TopMenu from './components/TopMenu'; 
+import Domain from './pages/Domain'; 
+import Git from './pages/Git'; 
+import Docker from './pages/Docker';
+import PHP from './pages/PHP';
+import Index from './pages/Index'; 
+
+import LabDomain from './sub-pages/LabDomain'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <Router>
+      <div className="App">
+        <TopMenu/>
+
+        <Route path="/" exact component={Index} />
+        <Route path="/domain" exact component={Domain}/>
+        <Route path="/git" exact component={Git}/>
+        <Route path="/docker" exact component={Docker}/>
+        <Route path="/php" exact component={PHP}/>
+
+        <Route path="/lab-domain" exact component={LabDomain}/>
+      </div>
+    </Router>
   );
 }
 
