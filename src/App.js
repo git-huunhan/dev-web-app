@@ -12,7 +12,9 @@ import Docker from './pages/Docker';
 import PHP from './pages/PHP';
 import Index from './pages/Index'; 
 
-import LabDomain from './sub-pages/LabDomain'
+import lab01 from './sub-pages/lab-domain/lab01';
+import lab02 from './sub-pages/lab-domain/lab02';
+import lab03 from './sub-pages/lab-domain/lab03';
 
 function App() {
   return (
@@ -26,7 +28,10 @@ function App() {
         <Route path="/docker" exact component={Docker}/>
         <Route path="/php" exact component={PHP}/>
 
-        <Route path="/lab-domain" exact component={LabDomain}/>
+        <Route path="/lab-domain-01" exact component={lab01}/>
+        <Route path="/lab-domain-02" exact component={lab02}/>
+        <Route path="/lab-domain-03" exact component={lab03}/>
+
       </div>
     </Router>
   );
