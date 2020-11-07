@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Card, CardImg, CardText, CardBody,
   CardTitle, Button } from 'reactstrap'; 
 
+import pavietnam from '../../img/domain-lab03/pavietnam.png';
+import bkhost from '../../img/domain-lab03/bkhost.png';
+import matbao from '../../img/domain-lab03/matbao.png';
+import webhost from '../../img/domain-lab03/000webhost.png';
+import domain from '../../img/domain-lab03/domain.png';
+import dodaddy from '../../img/domain-lab03/dodaddy.png';
+
 class lab03 extends Component {
   constructor(props){
     super(props);
@@ -9,33 +16,30 @@ class lab03 extends Component {
     this.state = {
       products: [{
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "1. Tổng quan về DNS",
+        "name": "Trong nước",
         description: [{
-          "deschild": "DNS là Domain Name System, hệ thống tên miền hay Hệ thống phân giải (resolve) tên miền",
+          "deschild": "pavietnam.vn",
+          "imageUrl": pavietnam
         },{
-          "deschild": "DNS là Domain Name System, hệ thống tên miền hay Hệ thống phân giải (resolve) tên miền.DNS dùng để lưu trữ các tên miền (domain name, ví dụ www.google.com), cung cấp dịch vụ chuyển đổi từ địa chỉ dạng chuỗi (tên miền) sang địa chỉ dạng số (IP) và ngược lại (ví dụ www.google.com <> 216.58.221.228)",
+          "deschild": "bkhost.vn",
+          "imageUrl": bkhost
+        },{
+          "deschild": "matbao.net",
+          "imageUrl": matbao
         }],
-        "imageUrl": "https://webhostingtrace.com/wp-content/uploads/2008/03/domain-and-hosting1.jpg"
-      }, {
+      },{
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "2. Tên miền cấp 1, 2, 3",
+        "name": "Ngoài nước",
         description: [{
-          "deschild": "Tên miền cấp 1 cũng là tên miền quốc tế, được dùng chung cho nhiều quốc gia, mỗi tên miền đại diện cho một lĩnh vực, một ngành nghề, hay một khu vực địa lý. Ví dụ: .com, .net, .org, .mil, .edu, .gov, .asia, .eu",
+          "deschild": "000webhost.com",
+          "imageUrl": webhost
         },{
-          "deschild": "Tên miền cấp 2 cũng là tên miền quốc gia, thông thường mỗi quốc gia sẽ có một tên miền riêng, gồm hai kí tự. Ví dụ: .vn (Việt Nam), .cn (Trung Quốc), .uk (Anh), .us (Mỹ).",
+          "deschild": "domain.com",
+          "imageUrl": domain
         },{
-          "deschild": "Tên miền cấp 3 là tên miền kết hợp giữa tên miền cấp 2 và tên miền cấp 1. Ví dụ: .com.vn, .edu.vn, .edu.uk, .com.us"
+          "deschild": "dodaddy.com",
+          "imageUrl": dodaddy
         }],
-        "imageUrl": "https://webhostingtrace.com/wp-content/uploads/2008/03/domain-and-hosting1.jpg"
-      }, {
-        "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "3. Tên miền quốc tế và tên miền nội địa",
-        description: [{
-          "deschild": "Tên miền quốc tế: do Trung tâm quản lý tên miền quốc tế cấp, ví dụ thường có đuôi là .com, .net, .biz, .info, .org",
-        },{
-          "deschild": "Tên miền quốc gia (nội địa): do Trung tâm quản lý tên miền của mỗi quốc gia quản lý. Ví dụ tên miền của Việt Nam có đuôi dạng .vn, .com.vn, edu.vn, gov.vn. Các tên miền này do VNNIC quản lý.",
-        }],
-        "imageUrl": "https://webhostingtrace.com/wp-content/uploads/2008/03/domain-and-hosting1.jpg"
       }],
     }; 
   }
@@ -56,7 +60,9 @@ class lab03 extends Component {
                       <CardTitle id="card-title">{products.name}</CardTitle>
                       <CardText>
                         {products.description.map(description =>(
-                            <li>{description.deschild}</li>  
+                            <li>{description.deschild}
+                              <img className="img-lab02" src={description.imageUrl} alt="img-lab03"></img>                            
+                            </li>
                         ))}
                       </CardText>
                     </CardBody>

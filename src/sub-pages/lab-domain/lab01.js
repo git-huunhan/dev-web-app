@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Card, CardImg, CardText, CardBody,
   CardTitle, Button } from 'reactstrap'; 
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from "react-router-dom";
+
+import ScrollArrow from "../../pages/ScrollArrow";
 
 class lab01 extends Component {
   constructor(props){
@@ -47,6 +51,17 @@ class lab01 extends Component {
       <div>
         <Container>
           <h2>Lab 1. Hiểu về DNS</h2>
+          <div>
+            <Breadcrumb tag="nav" listTag="div">
+              <BreadcrumbItem tag="a">
+                <Link to="/">Home</Link>
+              </BreadcrumbItem>
+              <BreadcrumbItem tag="a">
+                <Link to="/domain">Domain name & Hosting</Link>
+              </BreadcrumbItem>
+              <BreadcrumbItem active tag="span">Lab 01</BreadcrumbItem>
+            </Breadcrumb>
+          </div>
           <Row>
             { products.map(products =>(
               <Col className="mb-4" sm="12" md="12" lg="12" xl="12">
@@ -65,6 +80,8 @@ class lab01 extends Component {
               </Col>
             ))}
           </Row>
+
+          <ScrollArrow></ScrollArrow>
         </Container>
       </div>
     );

@@ -126,6 +126,7 @@ body {
   margin-top: 3px;
   width: 18px;
   height: 18px;
+  fill: #ff3838;
 }
 
 .reaction {
@@ -198,4 +199,10 @@ body {
 
 .img-lab02 {
   width: 100%;
+}
+
+.breadcrumb {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.068), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  border-radius: 10px !important;
 }
