@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, CardImg, CardText, CardBody,
   CardTitle, Button } from 'reactstrap'; 
 import { Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Badge } from 'reactstrap';
 
 import ScrollArrow from "./ScrollArrow";
 
@@ -100,7 +101,7 @@ class Domain extends Component {
                       <Link to={products.link}>
                         <CardTitle id="card-title">{products.name}</CardTitle>
                       </Link>
-                      
+                      <Badge color="dark" pill>Sat Nov 7</Badge>
                       <CardText>{products.description}</CardText>
                       <Link to={products.link}>
                         <Button className="mt-auto read-more" color="primary">Xem thêm</Button>
