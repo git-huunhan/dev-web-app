@@ -92,7 +92,7 @@ class Index extends Component {
         
 
         <Col className="d-flex mb-4 justify-content-center" sm="12" md="12" lg="12" xl="12">
-          <Col className="p-0" sm="12" md="12" lg="12" xl="3">
+          <Col className="p-0" sm="12" md="12" lg="3" xl="3">
             <Container>
               <div className="text-color">
               {user.map(user =>
@@ -110,7 +110,7 @@ class Index extends Component {
             </Container>
           </Col>
 
-          <Col className="p-0" sm="12" md="12" lg="12" xl="5">
+          <Col className="p-0" sm="12" md="12" lg="5" xl="5">
             {user.map(user =>
               user.post.map(post =>
                 <Container className="mb-4">

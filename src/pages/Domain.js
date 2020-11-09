@@ -101,7 +101,11 @@ class Domain extends Component {
                       <Link to={products.link}>
                         <CardTitle id="card-title">{products.name}</CardTitle>
                       </Link>
-                      <Badge color="dark" pill>Sat Nov 7</Badge>
+                      <div className="timePost">
+                        <Badge className="timePostChild" color="primary" pill>1:39 AM</Badge>
+                        <Badge className="timePostChild" color="secondary" pill>Sunday November 8</Badge>
+                        <Badge color="secondary" pill>Huu Nhan</Badge>
+                      </div>
                       <CardText>{products.description}</CardText>
                       <Link to={products.link}>
                         <Button className="mt-auto read-more" color="primary">Xem thêm</Button>

@@ -11,6 +11,7 @@ import {
 import { Link } from "react-router-dom";
 
 import logo from '../img/logo-react.svg';
+import avatar1 from '../img/avatar-1.jpg';
 
 const TopMenu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,6 +54,11 @@ const TopMenu = (props) => {
             </NavItem>
           </Nav>
         </Collapse>
+        <NavbarBrand>
+          <Link to="/">
+            <img className="avatar-topbar" src={avatar1} alt="logo"/>
+          </Link>
+        </NavbarBrand>
       </Navbar>
     </div>
   );
