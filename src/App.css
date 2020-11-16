@@ -1,6 +1,6 @@
 body {
   padding: 100px 0 0 0;
-  background-color: #eefaff !important;
+  background-color: #f4fcff !important;
 }
 
 #nav-bar a{
@@ -71,7 +71,7 @@ body {
 }
 
 #logo {
-  width: 250px;
+  width: 140px;
 }
 
 .text-color {
@@ -225,4 +225,33 @@ body {
 .avatar-topbar {
   width: 35px;
   border-radius: 50%;
+}
+
+#nav-bar a:hover {
+  cursor: pointer;
+}
+
+.image-home {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide-header {
+  top: -40px;
+}
+
+.image-card-home {
+  border-radius: 10px;
+  width: 80%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.text-card-home {
+  text-align: justify;
+}
+
+.margin-bottom-card {
+  margin-bottom: 50px;
 }

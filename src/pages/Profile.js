@@ -13,7 +13,7 @@ import love from '../img/love.svg';
 import care from '../img/care.svg';
 import suggestImg from '../img/suggest-img.jpg';
 
-class Index extends Component {
+class Profile extends Component {
   constructor (props){
     super(props);
 
@@ -181,4 +181,4 @@ class Index extends Component {
   }
 }
 
-export default Index;
+export default Profile;

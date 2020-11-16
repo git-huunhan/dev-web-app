@@ -6,11 +6,12 @@ import {
 
 import './App.css';
 import TopMenu from './components/TopMenu'; 
+import Home from './pages/Home';
 import Domain from './pages/Domain'; 
 import Git from './pages/Git'; 
 import Docker from './pages/Docker';
 import PHP from './pages/PHP';
-import Index from './pages/Index'; 
+import Profile from './pages/Profile'; 
 
 import lab01 from './sub-pages/lab-domain/lab01';
 import lab02 from './sub-pages/lab-domain/lab02';
@@ -22,7 +23,8 @@ function App() {
       <div className="App">
         <TopMenu/>
 
-        <Route path="/" exact component={Index} />
+        <Route path="/" exact component={Home} />
+        <Route path="/profile" exact component={Profile} />
         <Route path="/domain" exact component={Domain}/>
         <Route path="/git" exact component={Git}/>
         <Route path="/docker" exact component={Docker}/>

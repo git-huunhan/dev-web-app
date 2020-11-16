@@ -6,7 +6,11 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
+  UncontrolledDropdown, 
+  DropdownToggle, 
+  DropdownMenu, 
+  DropdownItem
 } from 'reactstrap';
 import { Link } from "react-router-dom";
 
@@ -32,27 +36,50 @@ const TopMenu = (props) => {
                 <Link to="/">Home</Link>
               </NavLink>
             </NavItem>
-            <NavItem className="ml-auto">
-              <NavLink>
-                <Link to="/domain">Domain name & Hosting</Link>
-              </NavLink>
-            </NavItem>
-            <NavItem className="ml-auto">
-              <NavLink>
-                <Link to="/git">Git</Link>
-              </NavLink>
-            </NavItem>
-            <NavItem className="ml-auto">
-              <NavLink>
-                <Link to="/docker">Docker</Link>
-              </NavLink>
-            </NavItem>
-            <NavItem className="ml-auto">
-              <NavLink>
-                <Link to="/php">PHP</Link>
-              </NavLink>
-            </NavItem>
           </Nav>
+          <UncontrolledDropdown setActiveFromChild>
+            <DropdownToggle tag="a" className="nav-link" caret>
+              Phát triển ứng dụng web
+            </DropdownToggle>
+            <DropdownMenu>
+              <Link to="/domain">
+                <DropdownItem tag="a">
+                  Domain name & Hosting
+                </DropdownItem>
+              </Link>
+              
+              <Link to="/git"> 
+                <DropdownItem tag="a">
+                  Git
+                </DropdownItem>
+              </Link>
+              
+              
+              <Link to="/docker">
+                <DropdownItem tag="a">
+                  Docker
+                </DropdownItem>
+              </Link>
+              
+              <Link to="/php">
+                <DropdownItem tag="a">
+                  PHP
+                </DropdownItem>
+              </Link>
+
+            </DropdownMenu>
+          </UncontrolledDropdown>
+          <UncontrolledDropdown setActiveFromChild>
+            <DropdownToggle tag="a" className="nav-link" caret>
+              Hệ quản trị CSDL
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem tag="a" href="/blah">Link</DropdownItem>
+              <DropdownItem tag="a" href="/blah">Link</DropdownItem>
+              <DropdownItem tag="a" href="/blah">Link</DropdownItem>
+              <DropdownItem tag="a" href="/blah">Link</DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
         </Collapse>
         <NavbarBrand>
           <Link to="/">

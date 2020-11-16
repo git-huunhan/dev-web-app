@@ -6,8 +6,9 @@ import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Badge } from 'reactstrap';
 
 import ScrollArrow from "./ScrollArrow";
+import Slide from '../components/Slide'
 
-class Domain extends Component {
+class Home extends Component {
   constructor(props){
     super(props);
 
@@ -75,73 +76,41 @@ class Domain extends Component {
 
     return(
       <div>
-        <Container>
-          <h2>Domain name & Hosting</h2>
-          <div>
-            <Breadcrumb tag="nav" listTag="div">
-              <BreadcrumbItem tag="a">
-                <Link to="/">Home</Link>
-              </BreadcrumbItem>
-              <BreadcrumbItem active tag="span">Domain name & Hosting</BreadcrumbItem>
-            </Breadcrumb>
-          </div>
+        <Slide></Slide>
+        <Container className="margin-bottom-card">
           <Row>
-            <Col className="p-0" sm="12" md="12" lg="12" xl="8">
-              { products.map(products =>(
-                  <Col className="mb-4" sm="12" md="12" lg="12" xl="12">
-                    <Card id="card" className="border-0 h-100 flex-row">
-                      <Col className="m-4 p-0" sm="6" md="4" lg="3" xl="5">
-                        <CardImg
-                        className=""
-                        id="card-img" 
-                        src={products.imageUrl}
-                        alt="Card image cap" />
-                      </Col>
-                      <Col className="m-4 p-0">
-                        <CardBody className="d-flex flex-column">
-                          <Link to={products.link}>
-                            <CardTitle id="card-title">{products.name}</CardTitle>
-                          </Link>
-                          <div className="timePost">
-                            <Badge className="timePostChild" color="primary" pill>1:39 AM</Badge>
-                            <Badge className="timePostChild" color="secondary" pill>Sunday November 8</Badge>
-                            <Badge color="secondary" pill>Huu Nhan</Badge>
-                          </div>
-                          <CardText>{products.description}</CardText>
-                          <Link to={products.link}>
-                            <Button className="mt-auto read-more" color="primary">Xem thêm</Button>
-                          </Link>
-                        </CardBody>
-                      </Col>
-                    </Card>
-                  </Col>
-              ))}
+            <Col className="d-flex flex-column align-items-center" sm="12" md="12" lg="12" xl="4">
+                <img className="image-card-home mb-3" top width="100%" src="https://vtc.edu.vn/wp-content/uploads/2017/11/vtc-academy-hoc-lap-trinh-web-nen-bat-dau-tu-dau.jpeg" alt="card-img" />
+                <h4>Phát triển ứng dụng web</h4>
+                <h6 className="text-card-home p-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </h6>
             </Col>
-            <Col className="p-0" sm="12" md="12" lg="12" xl="4">
-                  <Col className="mb-4" sm="12" md="12" lg="12" xl="12">
-                    <Card id="card" className="border-0 h-100 flex-row">
-                      <Col className="m-4">
-                        <CardBody className="d-flex flex-column p-0">
-                          <h4>All post</h4>
-                          
-                          { products.map(products =>
-                            <Link to={products.link}>
-                              <CardTitle id="card-title">{products.name}</CardTitle>
-                            </Link>
-                          )}
-                        </CardBody>
-                      </Col>
-                    </Card>
-                  </Col>
+
+            <Col className="d-flex flex-column align-items-center" sm="12" md="12" lg="12" xl="4">
+                <img className="image-card-home mb-3" top width="100%" src="https://www.itsguru.com/wp-content/uploads/2020/05/The-Considerations-And-Perks-Of-Choosing-A-DBMS-ITs-Guru.png" alt="card-img" />
+                <h4>Hệ quản trị CSDL</h4>
+                <h6 className="text-card-home p-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </h6>
+            </Col>
+            
+            <Col className="d-flex flex-column align-items-center" sm="12" md="12" lg="12" xl="4">
+                <img className="image-card-home mb-3" top width="100%" src="https://wallpaperaccess.com/full/1222968.jpg" alt="card-img" />
+                <h4>Tấu hài là chính</h4>
+                <h6 className="text-card-home p-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </h6>
             </Col>
             
           </Row>
 
           <ScrollArrow></ScrollArrow>
         </Container>
+        
       </div>
     );
   }
 }
 
-export default Domain; 
+export default Home; 
