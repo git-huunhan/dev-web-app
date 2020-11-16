@@ -80,7 +80,7 @@ class Domain extends Component {
           <div>
             <Breadcrumb tag="nav" listTag="div">
               <BreadcrumbItem tag="a">
-                <Link to="/">Home</Link>
+                <Link to="/">Trang chủ</Link>
               </BreadcrumbItem>
               <BreadcrumbItem active tag="span">Domain name & Hosting</BreadcrumbItem>
             </Breadcrumb>
@@ -122,8 +122,7 @@ class Domain extends Component {
                     <Card id="card" className="border-0 h-100 flex-row">
                       <Col className="m-4">
                         <CardBody className="d-flex flex-column p-0">
-                          <h4>All post</h4>
-                          
+                          <h4 className="mb-3">Tất cả bài viết</h4>
                           { products.map(products =>
                             <Link to={products.link}>
                               <CardTitle id="card-title">{products.name}</CardTitle>

@@ -54,7 +54,7 @@ class lab02 extends Component {
           <div>
             <Breadcrumb tag="nav" listTag="div">
               <BreadcrumbItem tag="a">
-                <Link to="/">Home</Link>
+                <Link to="/">Trang chủ</Link>
               </BreadcrumbItem>
               <BreadcrumbItem tag="a">
                 <Link to="/domain">Domain name & Hosting</Link>

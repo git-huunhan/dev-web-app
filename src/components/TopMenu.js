@@ -33,7 +33,7 @@ const TopMenu = (props) => {
           <Nav className="ml-auto" navbar>
             <NavItem className="ml-auto">
               <NavLink>
-                <Link to="/">Home</Link>
+                <Link to="/">Trang chủ</Link>
               </NavLink>
             </NavItem>
           </Nav>
@@ -82,7 +82,7 @@ const TopMenu = (props) => {
           </UncontrolledDropdown>
         </Collapse>
         <NavbarBrand>
-          <Link to="/">
+          <Link to="/profile">
             <img className="avatar-topbar" src={avatar1} alt="logo"/>
           </Link>
         </NavbarBrand>
