@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Card, CardImg, CardText, CardBody,
   CardTitle, Button } from 'reactstrap'; 
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from "react-router-dom";
+
+import ScrollArrow from "../../pages/ScrollArrow";
 
 import pavietnam from '../../img/domain-lab03/pavietnam.png';
 import bkhost from '../../img/domain-lab03/bkhost.png';
@@ -51,6 +55,17 @@ class lab03 extends Component {
       <div>
         <Container>
           <h2>Lab 3. Đăng ký tên miền có phí</h2>
+          <div>
+            <Breadcrumb tag="nav" listTag="div">
+              <BreadcrumbItem tag="a">
+                <Link to="/">Home</Link>
+              </BreadcrumbItem>
+              <BreadcrumbItem tag="a">
+                <Link to="/domain">Domain name & Hosting</Link>
+              </BreadcrumbItem>
+              <BreadcrumbItem active tag="span">Lab 03</BreadcrumbItem>
+            </Breadcrumb>
+          </div>
           <Row>
             { products.map(products =>(
               <Col className="mb-4" sm="12" md="12" lg="12" xl="12">
@@ -71,6 +86,7 @@ class lab03 extends Component {
               </Col>
             ))}
           </Row>
+          <ScrollArrow></ScrollArrow>
         </Container>
       </div>
     );
