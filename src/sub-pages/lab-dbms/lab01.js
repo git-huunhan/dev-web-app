@@ -5,6 +5,7 @@ import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from "react-router-dom";
 
 import ScrollArrow from "../../pages/ScrollArrow";
+import AllPostDBMS1 from '../../components/all-post/AllPostDBMS1'
 
 class lab01 extends Component {
   constructor(props){
@@ -50,38 +51,41 @@ class lab01 extends Component {
     return(
       <div>
         <Container>
-          <h2>Lab 1. Hiểu về DNS</h2>
+          <h2>Lab 1. Tải và cài đặt SQL server trên máy cục bộ</h2>
           <div>
             <Breadcrumb tag="nav" listTag="div">
               <BreadcrumbItem tag="a">
                 <Link to="/">Trang chủ</Link>
               </BreadcrumbItem>
               <BreadcrumbItem tag="a">
-                <Link to="/webdev">Phát triển ứng dụng web</Link>
+                <Link to="/dbms">Hệ quản trị cơ sở dữ liệu</Link>
               </BreadcrumbItem>
               <BreadcrumbItem tag="a">
-                <Link to="/domain">Domain name & Hosting</Link>
+                <Link to="/dbms1">Tổng quan DBMS</Link>
               </BreadcrumbItem>
               <BreadcrumbItem active tag="span">Lab 1</BreadcrumbItem>
             </Breadcrumb>
           </div>
           <Row>
-            { products.map(products =>(
-              <Col className="mb-4" sm="12" md="12" lg="12" xl="12">
-                <Card id="card" className="border-0 h-100 flex-row">
-                  <Col className="m-4">
-                    <CardBody className="d-flex flex-column">
-                      <CardTitle id="card-title">{products.name}</CardTitle>
-                      <CardText>
-                        {products.description.map(description =>(
-                            <li>{description.deschild}</li>  
-                        ))}
-                      </CardText>
-                    </CardBody>
-                  </Col>
-                </Card>
-              </Col>
-            ))}
+            <Col className="p-0" sm="12" md="12" lg="12" xl="8">
+              { products.map(products =>(
+                <Col className="mb-4" sm="12" md="12" lg="12" xl="12">
+                  <Card id="card" className="border-0 h-100 flex-row">
+                    <Col className="m-4">
+                      <CardBody className="d-flex flex-column">
+                        <CardTitle id="card-title">{products.name}</CardTitle>
+                        <CardText>
+                          {products.description.map(description =>(
+                              <li>{description.deschild}</li>  
+                          ))}
+                        </CardText>
+                      </CardBody>
+                    </Col>
+                  </Card>
+                </Col>
+              ))}
+            </Col>
+            <AllPostDBMS1></AllPostDBMS1>
           </Row>
 
           <ScrollArrow></ScrollArrow>

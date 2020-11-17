@@ -38,9 +38,11 @@ const TopMenu = (props) => {
             </NavItem>
           </Nav>
           <UncontrolledDropdown setActiveFromChild>
-            <DropdownToggle tag="a" className="nav-link" caret>
-              Phát triển ứng dụng web
-            </DropdownToggle>
+            <Link to="/webdev">
+              <DropdownToggle tag="a" className="nav-link" caret>
+                Phát triển ứng dụng web
+              </DropdownToggle>
+            </Link>
             <DropdownMenu>
               <Link to="/domain">
                 <DropdownItem tag="a">
@@ -70,14 +72,24 @@ const TopMenu = (props) => {
             </DropdownMenu>
           </UncontrolledDropdown>
           <UncontrolledDropdown setActiveFromChild>
-            <DropdownToggle tag="a" className="nav-link" caret>
-              Hệ quản trị CSDL
-            </DropdownToggle>
+            <Link to="/dbms">
+              <DropdownToggle tag="a" className="nav-link" caret>
+                Hệ quản trị CSDL
+              </DropdownToggle>
+            </Link>
+            
             <DropdownMenu>
-              <DropdownItem tag="a" href="/blah">Link</DropdownItem>
-              <DropdownItem tag="a" href="/blah">Link</DropdownItem>
-              <DropdownItem tag="a" href="/blah">Link</DropdownItem>
-              <DropdownItem tag="a" href="/blah">Link</DropdownItem>
+              <Link to="/dbms1">
+                <DropdownItem tag="a">
+                  Tổng quan DBMS
+                </DropdownItem>
+              </Link>
+
+              <Link to="/dbms2">
+                <DropdownItem tag="a">
+                  Kiến trúc DBMS
+                </DropdownItem>
+              </Link>
             </DropdownMenu>
           </UncontrolledDropdown>
         </Collapse>

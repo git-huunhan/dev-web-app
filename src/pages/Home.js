@@ -79,26 +79,39 @@ class Home extends Component {
         <Slide></Slide>
         <Container className="margin-bottom-card">
           <Row>
-            <Col className="d-flex flex-column align-items-center" sm="12" md="12" lg="12" xl="4">
-                <img className="image-card-home mb-3" top width="100%" src="https://vtc.edu.vn/wp-content/uploads/2017/11/vtc-academy-hoc-lap-trinh-web-nen-bat-dau-tu-dau.jpeg" alt="card-img" />
-                <h4>Phát triển ứng dụng web</h4>
-                <h6 className="text-card-home p-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <Col className="pl-4 pr-4 d-flex flex-column align-items-center" sm="12" md="12" lg="12" xl="4">
+                <Link to="/webdev">
+                    <img className="image-card-home mb-3" top width="100%" src="https://vtc.edu.vn/wp-content/uploads/2017/11/vtc-academy-hoc-lap-trinh-web-nen-bat-dau-tu-dau.jpeg" alt="card-img" />
+                </Link>
+                
+                <Link className="card-title-home" to="/webdev">
+                  <h4 >Phát triển ứng dụng web</h4>
+                </Link>
+                
+                <h6 className="text-card-home">
+                Môn học nhằm cung cấp các khái niệm, kiến thức, và kĩ năng căn bản để phát triển phần back-end cho một ứng dụng web. 
+                <br></br>Cụ thể gồm: thiết lập môi trường làm việc, sử dụng thuần thục ngôn ngữ lập trình, các kĩ thuật xử lý căn bản tại server-side, lập trình dựa trên khung mẫu (framework) và phát triển ứng dụng web dựa trên hệ quản lý nội dung (CMS).
                 </h6>
             </Col>
 
-            <Col className="d-flex flex-column align-items-center" sm="12" md="12" lg="12" xl="4">
+            <Col className="pl-4 pr-4 d-flex flex-column align-items-center" sm="12" md="12" lg="12" xl="4">
+              <Link to="/dbms">
                 <img className="image-card-home mb-3" top width="100%" src="https://www.itsguru.com/wp-content/uploads/2020/05/The-Considerations-And-Perks-Of-Choosing-A-DBMS-ITs-Guru.png" alt="card-img" />
+              </Link>
+
+              <Link className="card-title-home" to="/dbms">  
                 <h4>Hệ quản trị CSDL</h4>
-                <h6 className="text-card-home p-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </Link>
+
+                <h6 className="text-card-home">
+                Môn học nhằm cung cấp kiến thức về các hệ quản trị cơ sở dữ liệu (QTCSDL): các thành phần và chức năng của chúng trong hệ QTCSDL; các công cụ, đối tượng của hệ QTCSDL; các cơ chế quản lý, xử lý truy xuất dữ liệu; an toàn và khôi phục dữ liệu khi gặp sự cố; bảo mật và quản trị người dùng; triển khai cơ sở dữ liệu trên hệ QTCSDL.
                 </h6>
             </Col>
             
-            <Col className="d-flex flex-column align-items-center" sm="12" md="12" lg="12" xl="4">
+            <Col className="pl-4 pr-4 d-flex flex-column align-items-center" sm="12" md="12" lg="12" xl="4">
                 <img className="image-card-home mb-3" top width="100%" src="https://wallpaperaccess.com/full/1222968.jpg" alt="card-img" />
                 <h4>Tấu hài là chính</h4>
-                <h6 className="text-card-home p-4">
+                <h6 className="text-card-home">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </h6>
             </Col>

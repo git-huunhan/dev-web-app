@@ -61,12 +61,16 @@ class lab03 extends Component {
                 <Link to="/">Trang chủ</Link>
               </BreadcrumbItem>
               <BreadcrumbItem tag="a">
+                <Link to="/webdev">Phát triển ứng dụng web</Link>
+              </BreadcrumbItem>
+              <BreadcrumbItem tag="a">
                 <Link to="/domain">Domain name & Hosting</Link>
               </BreadcrumbItem>
               <BreadcrumbItem active tag="span">Lab 03</BreadcrumbItem>
             </Breadcrumb>
           </div>
           <Row>
+          <Col className="p-0" sm="12" md="12" lg="12" xl="8">
             { products.map(products =>(
               <Col className="mb-4" sm="12" md="12" lg="12" xl="12">
                 <Card id="card" className="border-0 h-100 flex-row">
@@ -85,6 +89,7 @@ class lab03 extends Component {
                 </Card>
               </Col>
             ))}
+          </Col>
           </Row>
           <ScrollArrow></ScrollArrow>
         </Container>

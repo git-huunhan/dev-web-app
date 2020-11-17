@@ -10,6 +10,7 @@ import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from "react-router-dom";
 
 import ScrollArrow from "../../pages/ScrollArrow";
+import AllPostDBMS1 from '../../components/all-post/AllPostDBMS1'
 
 class lab02 extends Component {
   constructor(props){
@@ -50,17 +51,17 @@ class lab02 extends Component {
     return(
       <div ref={this.myRef}>
         <Container>
-          <h2>Lab 2. Đăng ký tên miền miễn phí</h2>
+          <h2>Lab 2. Tải và cài đặt SQL server trên Docker</h2>
           <div>
             <Breadcrumb tag="nav" listTag="div">
               <BreadcrumbItem tag="a">
                 <Link to="/">Trang chủ</Link>
               </BreadcrumbItem>
               <BreadcrumbItem tag="a">
-                <Link to="/webdev">Phát triển ứng dụng web</Link>
+                <Link to="/dbms">Hệ quản trị cơ sở dữ liệu</Link>
               </BreadcrumbItem>
               <BreadcrumbItem tag="a">
-                <Link to="/domain">Domain name & Hosting</Link>
+                <Link to="/dbms1">Tổng quan DBMS</Link>
               </BreadcrumbItem>
               <BreadcrumbItem active tag="span">Lab 2</BreadcrumbItem>
             </Breadcrumb>
@@ -84,8 +85,7 @@ class lab02 extends Component {
                 </Col>
               ))}
             </Col>
-            <Col>
-            </Col>
+            <AllPostDBMS1></AllPostDBMS1>
           </Row>
           <ScrollArrow></ScrollArrow>
         </Container>

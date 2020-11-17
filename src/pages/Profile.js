@@ -5,7 +5,7 @@ import {
   CardTitle, CardSubtitle, Button, Input
 } from 'reactstrap';
 
-import avatar from '../img/avatar.jpg';
+import avatar from '../img/avatar-1.jpg';
 import wall from '../img/wall.png';
 import share from '../img/share.svg';
 import sad from '../img/sad.svg';
@@ -19,8 +19,8 @@ class Profile extends Component {
 
     this.state = {
       user: [{
-        "name": "Profile Cute Lovely",
-        "title": "Cuteeeeeeeeee",
+        "name": "Hữu Nhân",
+        "title": "<3",
         "intro": "Giới thiệu",
         introsub: [{
           "icon": "fas fa-graduation-cap",
@@ -39,7 +39,7 @@ class Profile extends Component {
         }],
         "suggest": suggestImg,
         post: [{
-          "name": "Profile Cute Lovely",
+          "name": "Hữu Nhân",
           "time": "27 tháng 9 lúc 16:24",
           "caption": "Ảnh bìa này",
           "image": wall,
@@ -49,7 +49,7 @@ class Profile extends Component {
           "share": "Chia sẻ",
           "commentInput": "Viết bình luận..." 
         },{
-          "name": "Profile Cute Lovely",
+          "name": "Hữu Nhân",
           "time": "27 tháng 9 lúc 16:24",
           "caption": "Ảnh gợi ý này",
           "image": suggestImg,
@@ -90,10 +90,10 @@ class Profile extends Component {
             </div>
           </Container>
         
-
+        <Container>
         <Col className="d-flex mb-4 justify-content-center" sm="12" md="12" lg="12" xl="12">
-          <Col className="p-0" sm="12" md="12" lg="3" xl="3">
-            <Container>
+          <Col className="p-0" sm="12" md="12" lg="3" xl="4">
+            <Container className="pr-0">
               <div className="text-color">
               {user.map(user =>
                 <Card id="card" className="profile">
@@ -110,7 +110,7 @@ class Profile extends Component {
             </Container>
           </Col>
 
-          <Col className="p-0" sm="12" md="12" lg="5" xl="5">
+          <Col className="p-0" sm="12" md="12" lg="5" xl="6">
             {user.map(user =>
               user.post.map(post =>
                 <Container className="mb-4">
@@ -173,6 +173,8 @@ class Profile extends Component {
             )}
           </Col>
         </Col>
+        </Container>
+        
 
         
       </Col>

@@ -7,65 +7,23 @@ import { Badge } from 'reactstrap';
 
 import ScrollArrow from "./ScrollArrow";
 
-class Domain extends Component {
+class HomeWebDev extends Component {
   constructor(props){
     super(props);
 
     this.state = {
       products: [{
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 1. Hiểu về DNS",
+        "name": "Tổng quan DBMS",
         "description": "",
-        "imageUrl": "https://webhostingtrace.com/wp-content/uploads/2008/03/domain-and-hosting1.jpg",
-        "link": "/lab-domain-01",
+        "imageUrl": "https://lh6.googleusercontent.com/QGKdQtkdztm7tbLBc6juMj7qhdt5WuXPq6-0Kfs5zvKsmOa4XU0lASeiNZGMFyENSqvPd8qrAAeHCLNYeS75eF_WxgQQoi44ZRZbtOuzSctt-RlRj6fiLdmqDNZb_65aZhgpcpmB",
+        "link": "/dbms1",
       }, {
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 2. Đăng ký tên miền miễn phí",
+        "name": "Kiến trúc DBMS",
         "description": "",
-        "imageUrl": "https://i1.wp.com/wpwebsmartz.com/wp-content/uploads/2018/09/Register-Free-Domains.png?fit=760%2C473&ssl=1",
-        "link": "/lab-domain-02"
-      },{
-        "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 3. Đăng ký tên miền có phí",
-        "description": "",
-        "imageUrl": "https://optech.vn/upload/news/cach-dang-ky-ten-mien.png",
-        "link": "/lab-domain-03"
-      },{
-        "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 4. Hiểu về web server",
-        "description": "",
-        "imageUrl": "https://tintuc.tenten.vn/wp-content/uploads/2019/07/625942-for-more-on-web-hosting.jpg",
-        "link": "/lab-domain-03"
-      },{
-        "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 5. Cài đặt và cấu hình XAMPP",
-        "description": "",
-        "imageUrl": "https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_900/https://lcdung.top/wp-content/uploads/2013/06/xampp-la-gi.jpg",
-        "link": "/lab-domain-03"
-      },{
-        "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 6. Tìm hiểu về các loại hosting",
-        "description": "",
-        "imageUrl": "https://wiki.matbao.net/wp-content/uploads/2019/08/Hosting-la-gi-1200x675.jpg",
-        "link": "/lab-domain-03"
-      },{
-        "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 7. Tìm hiểu các thông số liên quan đến một web hosting",
-        "description": "",
-        "imageUrl": "https://thietkeweb9999.com/data/upload/top-dich-vu-luu-tru-web-nuoc-ngoai-tot-nhat-2020-2.jpg",
-        "link": "/lab-domain-03"
-      },{
-        "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 8. Shared hosting miễn phí",
-        "description": "",
-        "imageUrl": "https://ucompares.com/wp-content/uploads/2020/05/Free-Hosting.jpg",
-        "link": "/lab-domain-03"
-      },{
-        "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 9. Shared hosting có phí",
-        "description": "",
-        "imageUrl": "https://shameem.me/wp-content/uploads/2019/10/buy-siteground-hosting.png",
-        "link": "/lab-domain-03"
+        "imageUrl": "https://www.onlinenotesnepal.com/wp-content/uploads/2020/05/dbms-architecture.png",
+        "link": "/dbms2"
       }]
     }; 
   }
@@ -76,16 +34,13 @@ class Domain extends Component {
     return(
       <div>
         <Container>
-          <h2>Domain name & Hosting</h2>
+          <h2>Hệ quản trị cơ sở dữ liệu</h2>
           <div>
             <Breadcrumb tag="nav" listTag="div">
               <BreadcrumbItem tag="a">
                 <Link to="/">Trang chủ</Link>
               </BreadcrumbItem>
-              <BreadcrumbItem tag="a">
-                <Link to="/webdev">Phát triển ứng dụng web</Link>
-              </BreadcrumbItem>
-              <BreadcrumbItem active tag="span">Domain name & Hosting</BreadcrumbItem>
+              <BreadcrumbItem active tag="span">Hệ quản trị cơ sở dữ liệu</BreadcrumbItem>
             </Breadcrumb>
           </div>
           <Row>
@@ -125,7 +80,7 @@ class Domain extends Component {
                     <Card id="card" className="border-0 h-100 flex-row">
                       <Col className="m-4">
                         <CardBody className="d-flex flex-column p-0">
-                          <h4 className="mb-3">Tất cả bài viết</h4>
+                          <h4 className="mb-3">Tất cả chủ đề</h4>
                           { products.map(products =>
                             <Link to={products.link}>
                               <CardTitle id="card-title">{products.name}</CardTitle>
@@ -146,4 +101,4 @@ class Domain extends Component {
   }
 }
 
-export default Domain; 
+export default HomeWebDev; 
