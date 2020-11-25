@@ -5,7 +5,6 @@ import {
   CardTitle, CardSubtitle, Button, Input
 } from 'reactstrap';
 
-import avatar from '../img/avatar-1.jpg';
 import wall from '../img/wall.png';
 import share from '../img/share.svg';
 import sad from '../img/sad.svg';
@@ -20,6 +19,7 @@ class Profile extends Component {
     this.state = {
       user: [{
         "name": "Hữu Nhân",
+        "avatar": "https://firebasestorage.googleapis.com/v0/b/dev-web-app-551e1.appspot.com/o/img%2Favatar-1.jpg?alt=media&token=b3636c0b-c9d4-4909-99cc-c96e782a05f8",
         "title": "<3",
         "intro": "Giới thiệu",
         introsub: [{
@@ -70,12 +70,13 @@ class Profile extends Component {
       <Col className="p-0 margin-head">
           <Container className="p-0 mb-4 mw-100">
             <div>
+            {user.map(user =>
               <Card id="card" className="card-wall text-color">
                 <div className="wall-container mw-100 mx-auto">
                   <img className="mw-100 wall-img border-wall" src={wall} alt="wallpaper"/>
                 </div>
-                <img className="avatar mx-auto margin-wall" src={avatar} alt="avatar" />
-                {user.map(user =>
+                <img className="avatar mx-auto margin-wall" src={user.avatar} alt="avatar" />
+               
                    <CardBody className="mx-auto">
                    <CardTitle id="card-title" className="text-center font-weight-bold h4">{user.name}</CardTitle>
                    <CardText className="text-center">{user.title}</CardText>
@@ -85,8 +86,9 @@ class Profile extends Component {
                      <a href="https://www.instagram.com/ig_huunhan/" className="button" target="_blank"><i class="fab fa-instagram button-icon instagram"></i></a>
                    </Col>
                  </CardBody>
-                )}
+                
               </Card>
+              )}
             </div>
           </Container>
         
@@ -118,7 +120,7 @@ class Profile extends Component {
                     <CardBody className="p-0 text-color">
                       <Col className="p-0 d-flex mb-2 justify-content-center" sm="12" md="12" lg="12" xl="12">
                         <Col sm="12" md="12" lg="12" xl="1">
-                          <img className="avatar-blog" src={avatar} alt=""/>
+                          <img className="avatar-blog" src={user.avatar} alt=""/>
                         </Col>
                         <Col className="blog-info">
                           <CardTitle id="card-title" className="ml-2 mb-0 font-weight-bold blog-user-name">{post.name}</CardTitle>
@@ -159,7 +161,7 @@ class Profile extends Component {
 
                         <Col className="p-0 d-flex mb-2 justify-content-center" sm="12" md="12" lg="12" xl="12">
                           <Col className="p-0" sm="12" md="12" lg="12" xl="1">
-                            <img className="avatar-blog mt-0" src={avatar} alt=""/>
+                            <img className="avatar-blog mt-0" src={user.avatar} alt=""/>
                           </Col>
                           <Col className="pr-0">
                             <Input className="input-post" type="text" placeholder={post.commentInput} />

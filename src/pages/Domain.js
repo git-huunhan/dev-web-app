@@ -17,7 +17,7 @@ class Domain extends Component {
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
         "name": "Lab 1. Hiểu về DNS",
         "description": "",
-        "imageUrl": "https://webhostingtrace.com/wp-content/uploads/2008/03/domain-and-hosting1.jpg",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/dev-web-app-551e1.appspot.com/o/img%2Fdomain-and-hosting1.jpg?alt=media&token=c4390622-0628-4cdf-b1dd-449bbec8371f",
         "link": "/lab-domain-01",
       }, {
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",

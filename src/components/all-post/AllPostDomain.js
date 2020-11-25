@@ -32,37 +32,37 @@ class AllPostDomain extends Component {
         "name": "Lab 4. Hiểu về web server",
         "description": "",
         "imageUrl": "https://tintuc.tenten.vn/wp-content/uploads/2019/07/625942-for-more-on-web-hosting.jpg",
-        "link": "/lab-domain-03"
+        "link": "/lab-domain-04"
       },{
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
         "name": "Lab 5. Cài đặt và cấu hình XAMPP",
         "description": "",
         "imageUrl": "https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_900/https://lcdung.top/wp-content/uploads/2013/06/xampp-la-gi.jpg",
-        "link": "/lab-domain-03"
+        "link": "/lab-domain-05"
       },{
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
         "name": "Lab 6. Tìm hiểu về các loại hosting",
         "description": "",
         "imageUrl": "https://wiki.matbao.net/wp-content/uploads/2019/08/Hosting-la-gi-1200x675.jpg",
-        "link": "/lab-domain-03"
+        "link": "/lab-domain-06"
       },{
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
         "name": "Lab 7. Tìm hiểu các thông số liên quan đến một web hosting",
         "description": "",
         "imageUrl": "https://thietkeweb9999.com/data/upload/top-dich-vu-luu-tru-web-nuoc-ngoai-tot-nhat-2020-2.jpg",
-        "link": "/lab-domain-03"
+        "link": "/lab-domain-07"
       },{
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
         "name": "Lab 8. Shared hosting miễn phí",
         "description": "",
         "imageUrl": "https://ucompares.com/wp-content/uploads/2020/05/Free-Hosting.jpg",
-        "link": "/lab-domain-03"
+        "link": "/lab-domain-08"
       },{
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
         "name": "Lab 9. Shared hosting có phí",
         "description": "",
         "imageUrl": "https://shameem.me/wp-content/uploads/2019/10/buy-siteground-hosting.png",
-        "link": "/lab-domain-03"
+        "link": "/lab-domain-09"
       }]
     }; 
   }

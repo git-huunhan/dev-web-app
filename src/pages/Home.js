@@ -110,7 +110,7 @@ class Home extends Component {
             
             <Col className="pl-4 pr-4 d-flex flex-column align-items-center" sm="12" md="12" lg="12" xl="4">
                 <Link to="/note">
-                  <img className="image-card-home mb-3" top width="100%" src="https://wallpaperaccess.com/full/1508669.jpg" alt="card-img" />
+                  <img className="image-card-home mb-3" top width="100%" src="https://firebasestorage.googleapis.com/v0/b/dev-web-app-551e1.appspot.com/o/img%2F1508669.jpg?alt=media&token=4de6e9ef-6eaf-4a47-af2d-e060ae1f2578" alt="card-img" />
                 </Link>
 
                 <Link className="card-title-home" to="/note"> 

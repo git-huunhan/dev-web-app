@@ -57,7 +57,6 @@ function App() {
         <Route path="/dbms" exact component={HomeDBMS}/>
         <Route path="/note" exact component={Note}/>
 
-
         <Route path="/lab-domain-01" exact component={lab01}/>
         <Route path="/lab-domain-02" exact component={lab02}/>
         <Route path="/lab-domain-03" exact component={lab03}/>
