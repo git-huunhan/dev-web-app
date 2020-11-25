@@ -5,6 +5,7 @@ import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from "react-router-dom";
 
 import ScrollArrow from "../../pages/ScrollArrow";
+import AllPostDomain from '../../components/all-post/AllPostDomain'
 
 class lab01 extends Component {
   constructor(props){
@@ -66,22 +67,25 @@ class lab01 extends Component {
             </Breadcrumb>
           </div>
           <Row>
-            { products.map(products =>(
-              <Col className="mb-4" sm="12" md="12" lg="12" xl="12">
-                <Card id="card" className="border-0 h-100 flex-row">
-                  <Col className="m-4">
-                    <CardBody className="d-flex flex-column">
-                      <CardTitle id="card-title">{products.name}</CardTitle>
-                      <CardText>
-                        {products.description.map(description =>(
-                            <li>{description.deschild}</li>  
-                        ))}
-                      </CardText>
-                    </CardBody>
-                  </Col>
-                </Card>
-              </Col>
-            ))}
+            <Col className="p-0" sm="12" md="12" lg="12" xl="8">
+              { products.map(products =>(
+                <Col className="mb-4" sm="12" md="12" lg="12" xl="12">
+                  <Card id="card" className="border-0 h-100 flex-row">
+                    <Col className="m-4">
+                      <CardBody className="d-flex flex-column">
+                        <CardTitle id="card-title">{products.name}</CardTitle>
+                        <CardText>
+                          {products.description.map(description =>(
+                              <li>{description.deschild}</li>  
+                          ))}
+                        </CardText>
+                      </CardBody>
+                    </Col>
+                  </Card>
+                </Col>
+              ))}
+            </Col>
+            <AllPostDomain></AllPostDomain>
           </Row>
 
           <ScrollArrow></ScrollArrow>

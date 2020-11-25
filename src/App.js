@@ -21,6 +21,12 @@ import Note from './pages/Note'
 import lab01 from './sub-pages/lab-domain/lab01';
 import lab02 from './sub-pages/lab-domain/lab02';
 import lab03 from './sub-pages/lab-domain/lab03';
+import lab04 from './sub-pages/lab-domain/lab04';
+import lab05 from './sub-pages/lab-domain/lab05';
+import lab06 from './sub-pages/lab-domain/lab06';
+import lab07 from './sub-pages/lab-domain/lab07';
+import lab08 from './sub-pages/lab-domain/lab08';
+import lab09 from './sub-pages/lab-domain/lab09';
 
 import LabDBMS01 from './sub-pages/lab-dbms/lab01'
 import LabDBMS02 from './sub-pages/lab-dbms/lab02'
@@ -55,6 +61,12 @@ function App() {
         <Route path="/lab-domain-01" exact component={lab01}/>
         <Route path="/lab-domain-02" exact component={lab02}/>
         <Route path="/lab-domain-03" exact component={lab03}/>
+        <Route path="/lab-domain-04" exact component={lab04}/>
+        <Route path="/lab-domain-05" exact component={lab05}/>
+        <Route path="/lab-domain-06" exact component={lab06}/>
+        <Route path="/lab-domain-07" exact component={lab07}/>
+        <Route path="/lab-domain-08" exact component={lab08}/>
+        <Route path="/lab-domain-09" exact component={lab09}/>
 
         <Route path="/lab-dbms-01" exact component={LabDBMS01}/>
         <Route path="/lab-dbms-02" exact component={LabDBMS02}/>

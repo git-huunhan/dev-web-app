@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Card, CardImg, CardText, CardBody,
   CardTitle, Button } from 'reactstrap'; 
 
+import ScrollArrow from "./ScrollArrow";
+
 class PHP extends Component {
   constructor(props){
     super(props);

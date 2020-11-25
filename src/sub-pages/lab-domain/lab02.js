@@ -10,6 +10,7 @@ import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from "react-router-dom";
 
 import ScrollArrow from "../../pages/ScrollArrow";
+import AllPostDomain from '../../components/all-post/AllPostDomain';
 
 class lab02 extends Component {
   constructor(props){
@@ -84,8 +85,7 @@ class lab02 extends Component {
                 </Col>
               ))}
             </Col>
-            <Col>
-            </Col>
+            <AllPostDomain></AllPostDomain>
           </Row>
           <ScrollArrow></ScrollArrow>
         </Container>
