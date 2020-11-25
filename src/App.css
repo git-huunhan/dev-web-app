@@ -266,11 +266,14 @@ body {
   margin-bottom: 50px;
 }
 
-pre { 
-	margin: 20px; padding: 20px; 
-	color: rgb(223, 223, 223) !important; background-color: #222;
-	white-space: pre; text-shadow: 0 1px 0 #000;
-	border-radius: 15px; border-bottom: 1px solid #555;
+pre {
+  padding: 15px;
+  color: #d8d8d8 !important; 
+  background-color: #2f3646;
+  white-space: pre; 
+  text-shadow: 0 1px 0 #000;
+  border-radius: 10px; 
+  border-bottom: 1px solid #555;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.4) inset, 0 0 20px rgba(0,0,0,0.2) inset;
 	font: 16px/24px 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 }
@@ -281,4 +284,18 @@ pre {
 
 .md-text {
   text-align: justify ;
+}
+
+.md-table table, td, th{
+  border-collapse: collapse;
+  border: 2px solid rgb(197, 197, 197) !important;
+}
+
+.md-table th, td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.md-body {
+  max-width: 100%;
 }

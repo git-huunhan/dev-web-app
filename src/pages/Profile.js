@@ -19,7 +19,7 @@ class Profile extends Component {
     this.state = {
       user: [{
         "name": "Hữu Nhân",
-        "avatar": "https://firebasestorage.googleapis.com/v0/b/dev-web-app-551e1.appspot.com/o/img%2Favatar-1.jpg?alt=media&token=b3636c0b-c9d4-4909-99cc-c96e782a05f8",
+        "avatar": "https://firebasestorage.googleapis.com/v0/b/dev-web-app-551e1.appspot.com/o/img%2F126791600_2834978416760344_7147554556033642948_n.jpg?alt=media&token=15b69906-df50-4786-bdaa-4a911cdda8e3",
         "title": "<3",
         "intro": "Giới thiệu",
         introsub: [{

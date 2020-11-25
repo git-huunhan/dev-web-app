@@ -69,7 +69,6 @@ class Note extends Component {
             </Breadcrumb>
           </div>
           <Row>
-            <Col className="p-0" sm="12" md="12" lg="12" xl="8">
               { products.map(products =>(
                 <Col className="mb-4" sm="12" md="12" lg="12" xl="12">
                   <Card id="card" className="border-0 h-100 flex-row">
@@ -88,7 +87,6 @@ class Note extends Component {
                   </Card>
                 </Col>
               ))}
-            </Col>
           </Row>
 
           <ScrollArrow></ScrollArrow>
