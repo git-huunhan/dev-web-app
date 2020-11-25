@@ -16,6 +16,7 @@ import DBMS1 from './pages/DBMS1'
 import DBMS2 from './pages/DBMS2'
 import HomeWebDev from './pages/HomeWebDev';
 import HomeDBMS from './pages/HomeDBMS';
+import Note from './pages/Note'
 
 import lab01 from './sub-pages/lab-domain/lab01';
 import lab02 from './sub-pages/lab-domain/lab02';
@@ -48,6 +49,8 @@ function App() {
         <Route path="/dbms2" exact component={DBMS2}/>
         <Route path="/webdev" exact component={HomeWebDev}/>
         <Route path="/dbms" exact component={HomeDBMS}/>
+        <Route path="/note" exact component={Note}/>
+
 
         <Route path="/lab-domain-01" exact component={lab01}/>
         <Route path="/lab-domain-02" exact component={lab02}/>

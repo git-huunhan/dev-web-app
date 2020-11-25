@@ -109,8 +109,14 @@ class Home extends Component {
             </Col>
             
             <Col className="pl-4 pr-4 d-flex flex-column align-items-center" sm="12" md="12" lg="12" xl="4">
-                <img className="image-card-home mb-3" top width="100%" src="https://wallpaperaccess.com/full/1222968.jpg" alt="card-img" />
-                <h4>Tấu hài là chính</h4>
+                <Link to="/note">
+                  <img className="image-card-home mb-3" top width="100%" src="https://wallpaperaccess.com/full/1508669.jpg" alt="card-img" />
+                </Link>
+
+                <Link className="card-title-home" to="/note"> 
+                  <h4>Sổ tay môn học</h4>
+                </Link>
+
                 <h6 className="text-card-home">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </h6>

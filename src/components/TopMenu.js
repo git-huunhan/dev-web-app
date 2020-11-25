@@ -36,6 +36,12 @@ const TopMenu = (props) => {
                 <Link to="/">Trang chủ</Link>
               </NavLink>
             </NavItem>
+
+            <NavItem className="ml-auto">
+              <NavLink>
+                <Link to="/note">Sổ tay môn học</Link>
+              </NavLink>
+            </NavItem>
           </Nav>
           <UncontrolledDropdown setActiveFromChild>
             <Link to="/webdev">
