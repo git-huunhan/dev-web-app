@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, CardImg, CardText, CardBody,
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
-import termsFrPath from '../lab-dbms/lab08.md';
+import termsFrPath from '../lab-dbms/lab09-10.md';
 
 import gfm from 'remark-gfm';
 

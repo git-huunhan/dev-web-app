@@ -27,16 +27,10 @@ class DBMS2 extends Component {
         "link": "/lab-dbms-08"
       },{
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 9. Thực hiện các thao tác CRUD bằng ngôn ngữ lập trình và HQTCSDL",
+        "name": "Lab 9 & 10",
         "description": "",
         "imageUrl": "https://images.viblo.asia/6c18b19b-2bca-4039-91b7-c2d286d4802e.png",
-        "link": "/lab-dbms-09"
-      },{
-        "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 10. Thực hiện các thao tác CRUD bằng công cụ trung gian và HQTCSDL",
-        "description": "",
-        "imageUrl": "https://logopond.com/logos/70a5a28358a0f80718ac4f6737f018ae.png",
-        "link": "/lab-dbms-10"
+        "link": "/lab-dbms-09-10"
       }]
     };  
   }

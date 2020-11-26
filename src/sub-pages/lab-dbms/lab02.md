@@ -2,19 +2,19 @@
 
 - Đầu tiên ta phải tạo volume để chứa ánh xạ
   ```cmd
-  docker volume create sqlserver
+  docker volume create vmssql
   ```
 
 - Tiếp theo tạo/chạy container với lệnh sau:
 
   ```cmd
-  docker run -e 'ACCEPT_EULA=Y' --name sqlserver -e 'SA_PASSWORD=Password789' -p 1433:1433 -v vmssql:/var/opt/mssql -d mcr.microsoft.com/mssql/server:2019-latest
+  docker run -e 'ACCEPT_EULA=Y' --name c-mssql -e 'SA_PASSWORD=Password789' -p 1433:1433 -v vmssql:/var/opt/mssql -d mcr.microsoft.com/mssql/server:2017-latest
   ```
 
 - Để sử dụng SQL Server trên terminal
 
   ```cmd
-  docker exec -it -sqlserver bash
+  docker exec -it c-mssql bash
   ```
 
 - Thực hiện kết nối SQL Server
@@ -23,14 +23,6 @@
   /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'Password789'
   ```
 
-  ![image info](https://firebasestorage.googleapis.com/v0/b/dev-web-app-551e1.appspot.com/o/img%2Fdbms-lab01%2Fdbms1.png?alt=media&token=476087af-47ff-4787-aab8-f7dde163e2e1)
+  ![image info](https://firebasestorage.googleapis.com/v0/b/dev-web-app-551e1.appspot.com/o/img%2Fdbms-lab02%2FScreen%20Shot%202020-11-26%20at%2019.18.46.png?alt=media&token=bd379b47-caad-4899-b2e0-6024c61f0391)
 
-- Sử dụng Azure Data Studio để quản lý SQL Server trên docker dễ dàng
-
-- Chọn new Connection, tiếp tục điền các thông tin cần thiết
-
-  ![image info](https://firebasestorage.googleapis.com/v0/b/dev-web-app-551e1.appspot.com/o/img%2Fdbms-lab01%2Fdbms1.png?alt=media&token=476087af-47ff-4787-aab8-f7dde163e2e1)
-
-- 'SA_PASSWORD=Password789' => username: SA, password=Password789
-
-  ![image info](https://firebasestorage.googleapis.com/v0/b/dev-web-app-551e1.appspot.com/o/img%2Fdbms-lab01%2Fdbms1.png?alt=media&token=476087af-47ff-4787-aab8-f7dde163e2e1)
+  ![image info](https://firebasestorage.googleapis.com/v0/b/dev-web-app-551e1.appspot.com/o/img%2Fdbms-lab02%2FScreen%20Shot%202020-11-26%20at%2019.19.44.png?alt=media&token=eaeffe49-e7b4-4512-8ce1-885e83d4390c)

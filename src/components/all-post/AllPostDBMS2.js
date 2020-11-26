@@ -14,25 +14,19 @@ class AllPostDBMS2 extends Component {
         "name": "Lab 7. Sử dụng DDL định nghĩa dữ liệu",
         "description": "",
         "imageUrl": "https://www.datasunrise.com/wp-content/uploads/2017/03/12.jpg",
-        "link": "/lab-dbms-01",
+        "link": "/lab-dbms-07",
       }, {
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
         "name": "Lab 8. Thực hiện các thao tác CRUD trực tiếp trên CSDL",
         "description": "",
         "imageUrl": "https://ericsmasal.com/wp-content/uploads/2018/06/docker-sql-3-740x414.png",
-        "link": "/lab-dbms-02"
+        "link": "/lab-dbms-08"
       },{
         "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 9. Thực hiện các thao tác CRUD bằng ngôn ngữ lập trình và HQTCSDL",
+        "name": "Lab 9 & 10",
         "description": "",
         "imageUrl": "https://blog.tinohost.com/wp-content/uploads/2019/01/Pengertian-MySQL-Kegunaan-dan-Kelebihan.png",
-        "link": "/lab-dbms-03"
-      },{
-        "id": "95ad242b-03c4-4758-a8e4-cd0b0379bf12",
-        "name": "Lab 10. Thực hiện các thao tác CRUD bằng công cụ trung gian và HQTCSDL",
-        "description": "",
-        "imageUrl": "https://www.cbtnuggets.com/blog/wp-content/uploads/2020/10/1fxcMvJYNSokKWz6brY9LFpa3cGQs4vbF_Blog-1024x572.jpg",
-        "link": "/lab-dbms-04"
+        "link": "/lab-dbms-09-10"
       }]
     }; 
   }

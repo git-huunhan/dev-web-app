@@ -153,7 +153,7 @@ export default class TopMenu extends React.Component {
         </Collapse>
         <NavbarBrand>
           <Link to="/profile">
-            <img className="avatar-topbar" src={avatar1} alt="logo"/>
+            <img className="avatar-topbar" src="https://firebasestorage.googleapis.com/v0/b/dev-web-app-551e1.appspot.com/o/img%2F126791600_2834978416760344_7147554556033642948_n.jpg?alt=media&token=15b69906-df50-4786-bdaa-4a911cdda8e3" alt="logo"/>
           </Link>
         </NavbarBrand>
       </Navbar>

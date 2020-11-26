@@ -36,8 +36,8 @@ import LabDBMS05 from './sub-pages/lab-dbms/lab05'
 import LabDBMS06 from './sub-pages/lab-dbms/lab06'
 import LabDBMS07 from './sub-pages/lab-dbms/lab07'
 import LabDBMS08 from './sub-pages/lab-dbms/lab08'
-import LabDBMS09 from './sub-pages/lab-dbms/lab09'
-import LabDBMS10 from './sub-pages/lab-dbms/lab10'
+import LabDBMS0910 from './sub-pages/lab-dbms/lab09-10'
+
 
 function App() {
   return (
@@ -75,8 +75,7 @@ function App() {
         <Route path="/lab-dbms-06" exact component={LabDBMS06}/>
         <Route path="/lab-dbms-07" exact component={LabDBMS07}/>
         <Route path="/lab-dbms-08" exact component={LabDBMS08}/>
-        <Route path="/lab-dbms-09" exact component={LabDBMS09}/>
-        <Route path="/lab-dbms-10" exact component={LabDBMS10}/>
+        <Route path="/lab-dbms-09-10" exact component={LabDBMS0910}/>
       </div>
     </Router>
   );
