@@ -15,7 +15,7 @@ create table SinhVien (
   Dienthoai char(11)
 )
 ```
-- {{< figure src="/img/heqtcsdl/lab7/lab7_1.png" title="lab7" >}}
+![image info]()
 
 ##### 2. MongoDB
 - Ta chỉ có thể định nghĩa đối tượng Sinh viên cho mongodb thông qua schema của mongoose (thư viện npm trong nodejs)
@@ -53,4 +53,4 @@ create table SinhVien (
   Dienthoai char(11)
 )
 ```
-- {{< figure src="/img/heqtcsdl/lab7/lab7_2.png" title="lab7" >}}
+![image info]()

@@ -19,7 +19,7 @@ insert into SinhVien values ('1710285', N'Lê Anh Trí', 1999, 8, 9, 9, '1710285
 select * from dbo.SinhVien
 ```
 
-- {{< figure src="/img/heqtcsdl/lab8/lab8_1.png" title="lab8" >}}
+![image info]()
 
 - U (Update): cập nhật điểm sinh viên
 ```sql
@@ -27,13 +27,13 @@ update dbo.SinhVien
 set DiemMon1=8.5
 where MSSV='1710289'
 ```
-- {{< figure src="/img/heqtcsdl/lab8/lab8_3.png" title="lab8" >}}
+![image info]()
 
 - D (Delete): xoá 1 sinh viên nào đó
 ```sql
 delete from dbo.SinhVien where MSSV='1710289'
 ```
-- {{< figure src="/img/heqtcsdl/lab8/lab8_4.png" title="lab8" >}}
+![image info]()
 
 ##### 2. Mongo
 - C (Create): tạo 10 mẫu tin cho 10 sinh viên:
@@ -66,8 +66,7 @@ db.getCollection('SinhVien').insertMany([{
 use quanlysinhvien;
 db.getCollection('SinhVien').find({});
 ```
-- {{< figure src="/img/heqtcsdl/lab8/lab8_5.png" title="lab8" >}}
-
+![image info]()
 
 - U(Update): cập nhật điểm sinh viên
 ```ts
@@ -81,8 +80,7 @@ db.getCollection('SinhVien').updateOne(
   }
 )
 ```
-- {{< figure src="/img/heqtcsdl/lab8/lab8_6.png" title="lab8" >}}
-
+![image info]()
 
 - D (Delete): xoá 1 sinh viên nào đó
 ```ts
@@ -90,8 +88,7 @@ db.getCollection('SinhVien').remove({
   MSSV: '1710289'
 })
 ```
-- {{< figure src="/img/heqtcsdl/lab8/lab8_7.png" title="lab8" >}}
-
+![image info]()
 
 ##### 3. MySQL
 - C (Create): tạo 10 mẫu tin cho 10 sinh viên:
@@ -112,7 +109,7 @@ insert into SinhVien values ('1710285', 'Lê Anh Trí', 1999, 8, 9, 9, '1710285@
 ```sql
 select * from SinhVien
 ```
-- {{< figure src="/img/heqtcsdl/lab8/lab8_8.png" title="lab8" >}}
+![image info]()
 
 - U (Update): Cập nhật điểm sinh viên
 ```sql
@@ -120,7 +117,6 @@ update SinhVien
 set DiemMon1=8.5
 where MSSV='1710289'
 ```
-
 - D (Delete): xoá 1 sinh viên nào đó
 ```sql
 delete from dbo.SinhVien where MSSV='1710289'
